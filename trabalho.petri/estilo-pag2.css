@@ -1,0 +1,220 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #0A3751;
+
+    box-sizing: border-box;
+
+
+    
+}
+
+
+
+
+
+
+
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1.0rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 86px;
+    margin-right: 86px;
+
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #0A3751;
+    font-family: georgia;
+    font-weight: bold;
+
+
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+/* Container do carrossel */
+.carousel-container {
+    margin-top: 100px;
+    perspective: 1000px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    
+
+       
+
+      
+}
+
+/* Spinner para o efeito 3D */
+.spinner {
+    transform-style: preserve-3d;
+    width: 250px; /* Ajustado para centralizar melhor */
+    height: 250px;
+    position: relative;
+    transform: rotateY(0deg);
+    transition: transform 1s;
+    
+}
+
+/* Slides do carrossel */
+.carousel-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 250px; /* Ajustado para alinhar com a altura */
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+
+    
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 252px;
+    border-radius: 10px; /* Para manter o estilo arredondado */
+    object-fit: cover; /* Garante que as imagens fiquem no formato correto sem distorcer */
+    
+}
+
+.spinner div:nth-child(1) { transform: rotateY(0deg) translateZ(400px); }
+.spinner div:nth-child(2) { transform: rotateY(72deg) translateZ(400px); }
+.spinner div:nth-child(3) { transform: rotateY(144deg) translateZ(400px); }
+.spinner div:nth-child(4) { transform: rotateY(216deg) translateZ(400px); }
+.spinner div:nth-child(5) { transform: rotateY(288deg) translateZ(400px); }
+
+/* Botões de controle do carrossel */
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+/* Estilo da legenda do slide */
+.slide-title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    word-wrap: break-word; /* Quebra palavras longas */
+    font-family: Georgia;
+
+}
+
+/* Estilos da seção da tabela */
+.table-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    margin: 1rem auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.table-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    padding: 1.0rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+
+    background-color: #ffffff;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    font-family: georgia;
+
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0A3751;
+    color: #ecf0f1;
+    font-family: georgia;
+}
+
+table td {
+    color: #0A3751;
+    font-family: georgia;
+}
+
+/* Estilos adicionais para a tabela */
+table tr:hover {
+    background-color: #f0f0f0;
+}
+
+
+footer {
+    background: white;
+    color: #0A3751;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-family: Georgia;
+    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    padding: 1.0rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 86px;
+    margin-right: 86px;
+  }
+
+
+

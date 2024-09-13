@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color:   #0A3751;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Georgia;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.floating-box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.item-box{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.image-wrapper {
+    flex: 1;
+    text-align: center;
+    
+}
+
+.profile-pic {
+
+        width: 200px; /* Define uma largura fixa */
+        height: 200px; /* Define uma altura fixa */
+        object-fit: cover; /* Garante que a imagem preencha o espaço e mantenha uma proporção adequada */
+        border-radius: 50%; /* Torna a imagem circular */
+        border: 2px solid black; /* Adiciona uma borda para destacar a imagem */
+}
+
+.text-wrapper {
+    flex: 2;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.text-wrapper h1 {
+    font-size: 36px;
+    color: #000;
+}
+
+.text-wrapper p {
+    font-size: 18px;
+    color: #000000;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+
+  }
+  
+  li {
+    float: left;
+
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #0A3751;
+  }
+
+  .menu{
+    text-align: center;
+    justify-content: left;
+  
+  }
+
+  footer {
+    background-color: #ffffff;
+    color: #1e3a57;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Georgia;
+}
